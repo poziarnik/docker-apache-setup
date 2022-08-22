@@ -1,7 +1,7 @@
 # docker-apache-setup
 Docker setup for task-tracker in progress. Will create containers for web application with simple database.
 
-used images:
+## Used images:
   - phpadmin
   - mariadb
   - php-apache
