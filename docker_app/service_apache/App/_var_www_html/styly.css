@@ -1,0 +1,25 @@
+A:link		{color: #000000; text-decoration: none}
+A:visited	{color: #000000; text-decoration: none}
+A:active	{color: #000000}
+
+th A:link	{color: #FFFFFF; text-decoration: none}
+th A:visited	{color: #FFFFFF; text-decoration: none}
+th A:active	{color: #FFFFFF}
+
+
+body {
+ scrollbar-base-color: #f4f2be;
+ background-color: #f4f2be;
+ background-color: #ececec;
+ font-size: 12px;
+ font-family: Verdana;
+}
+
+select, textarea {font-size: 12px; font-family: Verdana;}
+table	{empty-cells: show; border: solid 1px; border-color: #CCCCCC; border-spacing: 1px}
+td, th	{border: inset 1px; border-color: #CCCCCC; font-size: 12px; font-family: Verdana; padding: 3px }
+th	{background-color: #900000; color: #FFFFFF }
+
+
+
+

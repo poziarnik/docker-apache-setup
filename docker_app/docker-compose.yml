@@ -1,0 +1,50 @@
+version: '3.7'
+
+services:
+  db:
+    container_name: db
+    hostname: db
+    build: ./service_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: whatever
+      MYSQL_DATABASE: Korbi
+      MYSQL_USER: Korbi
+      MYSQL_PASSWORD: wyBCewKk28kammg
+    volumes:
+      - ./service_db/data/ulohy.sql:/docker-entrypoint-initdb.d/dump.sql #database-data:/var/lib/mysql 
+    ports:
+      - 3306:3306
+
+  app:
+    container_name: server
+    build: ./service_apache
+    volumes:
+      - ./service_apache/App/_var_www_html:/var/www/html/
+    depends_on:
+      - db
+    ports:
+      - 80:80
+  
+  myadmin:
+    container_name: myadmin
+    image: phpmyadmin
+    restart: always
+    depends_on:
+      - db
+    environment:
+      - PMA_PORT=3306
+    ports:
+      - 8080:80
+
+#volumes:
+#  database-data:
+#  driver: local
+#  driver_opts: 
+#    type: none
+#    o: bind
+#    device: './service_db/data'
+
+  
+
+
