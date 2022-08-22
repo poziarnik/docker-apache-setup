@@ -2,15 +2,16 @@
 Docker setup for task-tracker in progress. Will create containers for web application with simple database.
 
 used images:
-  -phpadmin
-  -mariadb
-  -php-apache
+  - phpadmin
+  - mariadb
+  - php-apache
 
 ## running app
-1. install docker and docker-compose
-2. run docker compose - will pull images for you and run server and database  
+1. Install docker and docker-compose.
+2. Run docker compose - will pull images for you and run server and database.  
     - in docker_app directory run command: `docker-compose up`
-3. - server with application is running on port 8080 (type `localhost:8080` to webbrowser)  
+3. App
+   - server with application is running on port 8080 (type `localhost:8080` to webbrowser)  
    - phpadmin linked to database is running on port 8000
       -username: Korbi
       -password: wyBCewKk28kammg
