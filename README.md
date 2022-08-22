@@ -2,7 +2,7 @@
 Docker setup for task-tracker in progress. Will create containers for web application with simple database.
 
 ## Used images:
-  - phpadmin
+  - phpMyAdmin
   - mariadb
   - php-apache
 
