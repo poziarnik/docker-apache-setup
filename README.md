@@ -7,8 +7,8 @@ used images:
   -php-apache
 
 ## running app
-1. insatll docker
-2. run docker compose - will pull images for you and run server and database
+1. install docker and docker-compose
+2. run docker compose - will pull images for you and run server and database  
     -in docker_app directory run command: `docker-compose up` 
 3. - server with application is running on port 8080 (type `localhost:8080` to webbrowser)  
    - phpadmin linked to database is running on port 8000
