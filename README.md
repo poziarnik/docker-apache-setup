@@ -7,15 +7,16 @@ Docker setup for task-tracker in progress. Will create containers for web applic
   - php-apache
 
 ## Running app
-1. Install docker and docker-compose.
+1. - Install docker `sudo apt install docker`.
+   - Install docker-compose `sudo apt install docker-compose`.
 2. Run docker compose - will pull images for you and run server and database.  
-    - in docker_app directory run command: `docker-compose up`
+    - In docker_app directory run command: `docker-compose up`.
 3. App
-   - server with application is running on port 8080 (type `localhost:8080` to webbrowser)  
-   - phpadmin linked to database is running on port 8000
+   - Server with application is running on port 8080 (type `localhost:8080` to webbrowser).  
+   - phpMyAdmin linked to database is running on port 8000.
       -username: Korbi
       -password: wyBCewKk28kammg
-   - database running on port 3306
+   - Database running on port 3306.
 
 ## Task-tracker
   - App is old and in middle of futher development. First thing you will see after running is *The requested URL was not found on this server*, thats Okey :), just select Moje Filtre from top menu and you can see part of tasktracker running.
