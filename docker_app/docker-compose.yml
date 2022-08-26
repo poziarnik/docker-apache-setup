@@ -20,11 +20,14 @@ services:
     container_name: server
     build: ./service_apache
     volumes:
-      - ./service_apache/App/_var_www_html:/var/www/html/
+      - ./service_apache/App/_var_www_html:/var/www/html/:z
     depends_on:
       - db
     ports:
       - 80:80
+    environment:
+      APACHE_RUN_USER: '#1000'
+      APACHE_RUN_GROUP: '#1000'
   
   myadmin:
     container_name: myadmin
